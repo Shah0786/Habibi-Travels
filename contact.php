@@ -40,7 +40,7 @@ try
         
         // everything went well, we can compose the message, as usually
         
-        $emailText = "You have a new message from Moshah Property online";
+        $emailText = "You have a new message from Habibi Travels online <br/>";
 
         foreach ($_POST as $key => $value) {
 
