@@ -605,6 +605,19 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 /* Call to Action */
 
 .call-to-action {
+  background: url(../img/plane.jpg);
+/*    no-repeat center center fixed; */
+  color: #ffffff;
+  background: #0a5175;
+  padding: 62px 0;
+}
+
+.call-to-actions {
+  
+  background: url(../img/plane.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+/*    no-repeat center center fixed; */
   color: #ffffff;
   background: #0a5175;
   padding: 62px 0;
@@ -663,6 +676,29 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     opacity: 1;
     margin:25px auto 0;
   }
+
+
+.main_trial_area{
+    background: url(../img/plane.jpg) no-repeat top center;
+    overflow: hidden;
+    background-size: cover;
+    color:#fff;
+    height: 400px;
+}
+.main_trial h2{
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.main_trial h2 span{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.main_trial h4{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: none;
+}
 
 /* Input Styles */
 
@@ -818,6 +854,46 @@ i.scroll:hover {
 }
 /* Responsive */
 
+@media screen and (max-width:449px){
+    
+    .menu-item, .menu-open-button {
+       /* background: #ffc107; */
+    background: #6DD1C9;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    color: white;
+    text-align: center;
+    line-height: 58px;
+    transform: translate3d(0, 0, 0);
+    transition: transform ease-out 200ms;
+}
+
+    .menu-open:checked ~ .menu-item:nth-child(3) {
+    transition-duration: 170ms;
+    transform: translate3d(59px, 0, 0);
+}
+    
+    .menu-open:checked ~ .menu-item:nth-child(4) {
+    transition-duration: 250ms;
+    transform: translate3d(122px, 0, 0);
+}
+    .menu-open:checked ~ .menu-item:nth-child(5) {
+    transition-duration: 330ms;
+    transform: translate3d(183px, 0, 0);
+}
+    .menu-open:checked ~ .menu-item:nth-child(6) {
+    transition-duration: 410ms;
+    transform: translate3d(244px, 0, 0);
+}
+    
+    
+}
+
+
 @media (max-width: 768px) {
   
   .header {
@@ -828,9 +904,11 @@ i.scroll:hover {
   background: url(../img/callout.jpg) no-repeat center center scroll; 
   }
 
+/*
   .map {
   height: 75%;
   }
+*/
 
 }
 @media only screen and (min-width: 970px){
@@ -839,29 +917,3 @@ i.scroll:hover {
  }
 }
 
-/* --------------------------- modal -------------------------------------------- */
-
-#booking .modal-header h4 {
-  text-align: center;
-  color: #23668B;
-}
-
-#booking .modal-footer {
-  margin-top: 0;
-  background-color: #f4f4f4;
-  text-align: left !important;
-}
-
-#booking .modal-footer p {
-  margin-bottom: 15px;
-}
-.confirm-btn {
-    width: 100%;
-    padding: 15px 0px;
-    color: #fff;
-    background-color: rgb(35, 102, 139);
-}
-.confirm-btn:hover{
-  color: #fff;
-  background-color: rgb(22,68,94);
-}
