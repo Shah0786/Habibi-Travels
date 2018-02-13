@@ -684,11 +684,14 @@ figure.effect-zoe:hover p.icon-links a:first-child {
     background-size: cover;
     color:#fff;
     height: 400px;
+    background-position-y: -170px;
+   
 }
 .main_trial h2{
     text-transform: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+    margin-top: 322px;
 }
 .main_trial h2 span{
     font-family: 'Open Sans', sans-serif;
@@ -852,6 +855,37 @@ i.scroll {
 i.scroll:hover {
   color: #0a5175;
 }
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
 /* Responsive */
 
 @media screen and (max-width:449px){
@@ -860,34 +894,45 @@ i.scroll:hover {
        /* background: #ffc107; */
     background: #6DD1C9;
     border-radius: 100%;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     position: absolute;
     top: 15px;
     left: 12px;
     color: white;
     text-align: center;
-    line-height: 58px;
+    line-height: 67px;
     transform: translate3d(0, 0, 0);
     transition: transform ease-out 200ms;
+}
+.header {
+    display: table;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    background: url(../img/bg.jpg) no-repeat top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
     .menu-open:checked ~ .menu-item:nth-child(3) {
     transition-duration: 170ms;
-    transform: translate3d(59px, 0, 0);
+    transform: translate3d(54px, 0, 0);
 }
     
     .menu-open:checked ~ .menu-item:nth-child(4) {
     transition-duration: 250ms;
-    transform: translate3d(122px, 0, 0);
+    transform: translate3d(110px, 0, 0);
 }
     .menu-open:checked ~ .menu-item:nth-child(5) {
     transition-duration: 330ms;
-    transform: translate3d(183px, 0, 0);
+    transform: translate3d(162px, 0, 0);
 }
     .menu-open:checked ~ .menu-item:nth-child(6) {
     transition-duration: 410ms;
-    transform: translate3d(244px, 0, 0);
+    transform: translate3d(215px, 0, 0);
 }
     
     
@@ -895,10 +940,39 @@ i.scroll:hover {
 
 
 @media (max-width: 768px) {
-  
-  .header {
-  background: url(../img/bg.jpg) no-repeat center center scroll; 
-  }
+  .main_trial_area {
+    background: url(../img/plane.jpg) no-repeat top center;
+    overflow: hidden;
+    background-size: cover;
+    color: #fff;
+    height: 400px;
+    background-position-y: 0px;
+}
+    
+    .main_trial h2 {
+    text-transform: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 238px;
+}
+    
+h1.header-text {
+    font-family: 'Lobster', cursive;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    margin-top: 40px;
+    color: white;
+    font-size: 53px;
+    font-weight: bold;
+}
+em.header-text {
+    padding: 9px 20px;
+    position: relative;
+    top: -10px;
+    color: rgb(223, 88, 137);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+}
 
   .callout {
   background: url(../img/callout.jpg) no-repeat center center scroll; 
