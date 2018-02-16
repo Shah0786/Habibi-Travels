@@ -4,7 +4,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 require('recaptcha-master/src/autoload.php');
 
 // configure
-$fromEmail = 'mail@habibitravels.co.za'
+$fromEmail = 'no-Reply-Naughty-Faati@habibitravels.co.za';
 $fromName = 'Website Contact form';
 $sendToEmail = 'emsm007@gmail.com';
 $subject = 'New message from Habibi Travels Online';
@@ -24,29 +24,19 @@ try
 {
     
     if(count($_POST) == 0) throw new \Exception('Form is empty');
-    
-    
-    
-            if (!isset($_POST['g-recaptcha-response'])) {
+        if (!isset($_POST['g-recaptcha-response'])) {
             throw new \Exception('ReCaptcha is not set.');
         }
-
-        // do not forget to enter your secret key in the config above 
-        // from https://www.google.com/recaptcha/admin
         
         $recaptcha = new \ReCaptcha\ReCaptcha($recaptchaSecret, new \ReCaptcha\RequestMethod\CurlPost());
-        
-        // we validate the ReCaptcha field together with the user's IP address
-        
+ 
         $response = $recaptcha->verify($_POST['g-recaptcha-response'], $_SERVER['REMOTE_ADDR']);
 
 
         if (!$response->isSuccess()) {
             throw new \Exception('ReCaptcha was not validated.');
         }
-    
-    
-    
+
     $emailTextHtml = "<h4>You have a new message from Habibi Travels Online</h4><hr>";
     $emailTextHtml .= "<table>";
 
