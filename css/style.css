@@ -43,7 +43,7 @@ border-radius: 4px;
 }
 .inner {
     padding-top: 40px;
-    padding-bottom: 40px;
+/*    padding-bottom: 40px;*/
 }
 .vert-text {
   display: table-cell;
@@ -413,7 +413,7 @@ h4.service-title {
 
 /* places */
 #places{
-  margin-top: 100px;
+  margin-top: 20px;
   margin-bottom: 100px;
 }
 
@@ -629,8 +629,8 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 
 
   #contact{
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .contact-text{
@@ -1124,17 +1124,6 @@ em.header-text {
   .callout {
   background: url(../img/callout.jpg) no-repeat center center scroll; 
   }
-
-/*
-  .map {
-  height: 75%;
-  }
-*/
-
 }
-@media only screen and (min-width: 970px){
- .services{
-  padding: 140px 0px;
- }
-}
+
 
