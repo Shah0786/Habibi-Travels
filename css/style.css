@@ -52,7 +52,7 @@ border-radius: 4px;
 }
 .imgs{
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 .headsparas{
     text-align: center;
@@ -889,6 +889,7 @@ i.scroll:hover {
     transition: 0.4s;
     font-weight: bold;
     font-size: 25px;
+    border-radius: 20px;
 }
 
 #fa.fa-plus{
@@ -897,6 +898,7 @@ i.scroll:hover {
 }
 .active, .accordion:hover {
     background-color: #00bcfc;
+    border-radius: 50px;
 }
 
 
@@ -1021,27 +1023,6 @@ i.scroll:hover {
   background-color: rgba(0, 0, 0, 0.12);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Responsive */
 
 @media screen and (max-width:449px){
@@ -1103,7 +1084,8 @@ i.scroll:hover {
     outline: none;
     transition: 0.4s;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 20px;
+    border-radius: 20px;
 }
     
     
