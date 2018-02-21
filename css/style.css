@@ -1020,10 +1020,11 @@ i.scroll:hover {
 }
 .table-hover > tbody > tr:hover > td,
 .table-hover > tbody > tr:hover > th {
-  background-color: rgba(0, 0, 0, 0.12);
+  background-color: transparent;
 }
 
 /* Responsive */
+
 
 @media screen and (max-width:449px){
     
