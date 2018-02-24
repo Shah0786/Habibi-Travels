@@ -1131,6 +1131,21 @@ em.header-text {
   .callout {
   background: url(../img/callout.jpg) no-repeat center center scroll; 
   }
+    
+.accordion {
+    background-color: #00bcfc;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 21px;
+    border-radius: 20px;
+}
 }
 
 
