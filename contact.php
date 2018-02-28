@@ -4,9 +4,9 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 require('recaptcha-master/src/autoload.php');
 
 // configure
-$fromEmail = 'no-Reply-Naughty-Faati@habibitravels.co.za';
+$fromEmail = 'no-Reply@habibitravels.co.za';
 $fromName = 'Website Contact form';
-$sendToEmail = 'emsm007@gmail.com';
+$sendToEmail = 'travel@habibitravels.co.za';
 $subject = 'New message from Habibi Travels Online';
 
 $fields = array('name' => 'Name', 'surname' => 'Surname', 'phone' => 'Phone', 'email' => 'Email', 'message' => 'Message');
