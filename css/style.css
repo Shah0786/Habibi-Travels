@@ -649,9 +649,6 @@ figure.effect-zoe:hover p.icon-links a:first-child {
 }
 
 /*Contact */
-
-
-
   #contact{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -891,16 +888,38 @@ i.scroll:hover {
     font-size: 25px;
     border-radius: 20px;
 }
+.accordion2 {
+    background-color: #fd612e;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
+}
 
 #fa.fa-plus{
     float: right;
     padding-top: 4px;
+}
+#fa2.fa-plus{
+float: right;
+padding-top: 4px;
 }
 .active, .accordion:hover {
     background-color: #00bcfc;
     border-radius: 50px;
 }
 
+.active, .accordion2:hover {
+    background-color: #fd612e;
+    border-radius: 50px;
+}
 
 .panel {
     padding: 0 18px;
@@ -1087,9 +1106,26 @@ i.scroll:hover {
     font-weight: bold;
     font-size: 20px;
     border-radius: 20px;
+}   
+.accordion2 {
+    background-color: #fd612e;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 20px;
 }
-    
-    
+.saleimg{
+height: 60px;
+width: 80px;
+padding-top: 5px;
+}
 }
 
 
@@ -1127,7 +1163,6 @@ em.header-text {
     font-size: 18px;
     font-weight: bold;
 }
-
   .callout {
   background: url(../img/callout.jpg) no-repeat center center scroll; 
   }
@@ -1145,6 +1180,30 @@ em.header-text {
     font-weight: bold;
     font-size: 21px;
     border-radius: 20px;
+}
+    
+.accordion2{
+    background-color: #fd612e;
+    color: whitesmoke;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 20px;
+    }
+.saleimg{
+height: 60px;
+width: 80px;
+padding-top: 5px;
+}
+#fa2.fa-plus{
+float: right;
+padding-top: 16px;
 }
 }
 
